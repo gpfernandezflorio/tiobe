@@ -1,0 +1,66 @@
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="tiobe.js"></script>
+  <script src="langs/scratch.js"></script>
+  <script src="langs/python.js"></script>
+  <script src="langs/c.js"></script>
+  <script src="langs/cplusplus.js"></script>
+  <script src="langs/csharp.js"></script>
+  <script src="langs/java.js"></script>
+  <script src="langs/javascript.js"></script>
+  <script src="langs/php.js"></script>
+  <script src="langs/go.js"></script>
+  <script src="langs/sql.js"></script>
+  <script src="langs/fortran.js"></script>
+  <script src="langs/cobol.js"></script>
+  <script src="langs/matlab.js"></script>
+  <script src="langs/r.js"></script>
+  <script src="langs/ruby.js"></script>
+  <script src="langs/perl.js"></script>
+  <script src="langs/rust.js"></script>
+  <script src="langs/kotlin.js"></script>
+  <script src="langs/lua.js"></script>
+  <script src="langs/dart.js"></script>
+  <script src="langs/julia.js"></script>
+  <script src="langs/prolog.js"></script>
+  <script src="langs/asm.js"></script>
+  <link rel="stylesheet" href="tiobe.css" media="screen,projection">
+  <body>
+    <table>
+      <tr>
+        <td id="cellAjustes">
+          <div id="menu">
+            <button title="Ocultar menú" onclick="botonEsconder();">X</button>
+            <button title="Guardar gráfico actual" onclick="guardar();">v</button>
+            <button title="Abrir gráfico" onclick="abrir();">^</button>
+          </div>
+          <div id="ajustes">
+            <table>
+              <tr><td>Desde:</td><td><button onclick="rangox('xmin',-1);">-</button></td>
+                <td><input id="xmin" type="text" oninput="graficar()"></td>
+                <td><button onclick="rangox('xmin',1);">+</button></td></tr>
+              <tr><td>Hasta:</td><td><button onclick="rangox('xmax',-1);">-</button></td>
+                <td><input id="xmax" type="text" oninput="graficar()"></td>
+                <td><button onclick="rangox('xmax',1);">+</button></td></tr>
+            </table>
+            <div id="selectorLenguajes">
+            </div>
+            <button title="Agregar lenguaje" id="botonAgregar" onclick="agregarLenguaje();">+</button>
+          </div>
+          Fuente: <a href="https://www.tiobe.com/tiobe-index/">TIOBE index</a>
+        </td>
+        <td>
+          <div id="menuFlotante">
+            <button title="Mostrar menú" onclick="botonMostrar();">&lt;</button>
+            <button title="Guardar gráfico actual" onclick="guardar();">v</button>
+            <button title="Abrir gráfico" onclick="abrir();">^</button>
+            <span id="labels"></span>
+          </div>
+          <canvas id="canvas"></canvas>
+        </td>
+      </tr>
+    </table>
+  </body>
+  <script src="canvas.js"></script>
+  <script src="FileSaver.min.js"></script>
+</html>

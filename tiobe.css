@@ -1,0 +1,42 @@
+input {
+  width: 70;
+}
+
+#ajustes {
+  margin-top: 40px;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+#canvas {
+  border: solid 1px #aaa;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 10px;
+  margin: 5px;
+}
+
+#menuFlotante {
+  float: left;
+  position: absolute;
+  display: none;
+}
+
+#menu {
+  float: left;
+  position: absolute;
+}
+
+td {
+  vertical-align: top;
+}
+
+.lang {
+  border: solid 1px #aaa;
+  padding-right: 5px;
+  margin: 5px 0;
+}
